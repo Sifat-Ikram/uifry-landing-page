@@ -1,44 +1,50 @@
 import Image from "next/image";
 import img from "../assets/3d-fire-icon-isolated-on-transparent-background-3d-cartoon-simple-illustration-png.webp";
-import star from "../assets/Star.png"
+import star from "../assets/Star.png";
+import Link from "next/link";
 
 const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <a
+        <Link
           href="/"
+          passHref
           className="font-semibold text-gray-700 font-oswald text-lg hover:text-red-600"
         >
           Home
-        </a>
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           href="/about"
+          passHref
           className="font-semibold text-gray-700 font-oswald text-lg hover:text-red-600"
         >
           About Us
-        </a>
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           href="/pricing"
+          passHref
           className="font-semibold text-gray-700 font-oswald text-lg hover:text-red-600"
         >
           Pricing
-        </a>
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           href="/features"
+          passHref
           className="font-semibold text-gray-700 font-oswald text-lg hover:text-red-600"
         >
           Features
-        </a>
+        </Link>
       </li>
     </>
   );
+
   return (
     <div className="flex justify-center">
       <div className="navbar bg-base-100 lg:px-32 md:px-10">
@@ -67,11 +73,13 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <div className="flex justify-between items-center">
-            <Image src={img} className="h-8 w-9" alt="logo" />
-            <a className="text-4xl font-bold text-black font-oswald">uifry</a>
+          <div className="flex items-center">
+            <Image src={img} width={36} height={36} alt="logo" />
+            <a className="text-4xl font-bold text-black font-oswald ml-2">
+              uifry
+            </a>
             <div className="navbar-center hidden lg:flex ml-20">
-              <ul className="flex justify-center items-center gap-5">
+              <ul className="flex flex-row justify-center items-center gap-5">
                 {navLinks}
               </ul>
             </div>
@@ -83,7 +91,13 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      <Image src={star} alt="star" className="h-10 w-10 mt-10" />
+      <Image
+        src={star}
+        alt="star"
+        width={40}
+        height={40}
+        className="h-10 w-10 mt-10"
+      />
     </div>
   );
 };

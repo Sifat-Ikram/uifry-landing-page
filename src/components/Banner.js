@@ -65,7 +65,7 @@ const Banner = () => {
           <Image
             src={img3}
             alt="image3"
-            className="absolute left-2/3 lg:left-2/3 mt-80 lg:mt-42 lg:-ml-5 z-10 transform lg:-translate-x-60"
+            className="absolute left-2/3 lg:left-2/3 mt-80 lg:mt-42 lg:-ml-10 z-10 transform lg:-translate-x-60"
           />
         </div>
       </div>
