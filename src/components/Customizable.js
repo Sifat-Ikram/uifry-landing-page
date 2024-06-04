@@ -12,12 +12,12 @@ const Customizable = () => {
         <Image src={star} alt="star" className="h-14 w-14" />
       </div>
       <div className="w-11/12 mx-auto mt-48 flex flex-col lg:flex-row-reverse justify-center items-center gap-5">
-        <div className="flex flex-col w-1/2">
+        <div className="flex flex-col w-1/2 space-y-4">
           <div className="flex justify-start items-center gap-2">
             <div className="bg-red-600 rounded-full p-1">
               <GiStarShuriken className="text-white rounded-full text-lg" />
             </div>
-            <h1 className="text-black text-lg font-bold font-oswald">
+            <h1 className="text-black text-2xl font-bold font-oswald">
               Fully Customizable
             </h1>
           </div>

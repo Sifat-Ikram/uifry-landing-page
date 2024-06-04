@@ -19,13 +19,13 @@ const Testimonials = () => {
           <h1 className="text-black text-sm font-bold font-oswald uppercase text-center mt-10">
             Testimonial
           </h1>
-          <h1 className="text-black text-3xl font-extrabold font-oswald uppercase text-center">
+          <h1 className="text-black text-4xl font-extrabold font-oswald uppercase text-center">
             what our users <br></br> say about us?
           </h1>
         </div>
         <div className="w-11/12 mx-auto mt-48 flex flex-col lg:flex-row-reverse justify-center items-center gap-20">
           <div className="flex flex-col w-2/5">
-            <h1 className="text-xl font-extrabold font-oswald">
+            <h1 className="text-2xl font-extrabold font-oswald">
               The Best Financial Accounting <br></br> App Ever!
             </h1>
             <p className="pr-20 mt-5">
